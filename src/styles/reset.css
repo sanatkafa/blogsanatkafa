@@ -1,0 +1,81 @@
+html {
+  font: 112.5%/1.45em georgia, serif;
+}
+
+blockquote,
+dd,
+dl,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-top: 0.725rem;
+  margin-bottom: 0.725rem;
+}
+
+dd,
+ol,
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.mobile-menu-expanded {
+  position: fixed;
+  overflow: hidden;
+}
+
+.LineClamp {
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+@supports (display: -moz-box) {
+  .LineClamp {
+    display: block;
+  }
+}
+
+a .LineClamp {
+  display: inline-block;
+  display: -webkit-box;
+}
+
+a:after .LineClamp {
+  content: ' ';
+  font-size: 0;
+  visibility: hidden;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+
+[style*='--aspect-ratio'] > :first-child {
+  width: 100%;
+}
+
+[style*='--aspect-ratio'] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*='--aspect-ratio'] {
+    position: relative;
+  }
+
+  [style*='--aspect-ratio']:before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% / var(--aspect-ratio));
+    height: 0;
+  }
+
+  [style*='--aspect-ratio'] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}

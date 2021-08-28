@@ -1,0 +1,9 @@
+{
+  // Editor Rules
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+
+  // ESLint
+  "javascript.validate.enable": false,
+  "eslint.enable": true
+}

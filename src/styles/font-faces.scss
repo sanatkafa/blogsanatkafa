@@ -1,0 +1,55 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-regular.woff2) format("woff2"), url(../assets/fonts/proximanova-regular.woff2) format("woff");
+  font-weight: 400;
+  font-display: fallback
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-bold.woff2) format("woff2"), url(../assets/fonts/proximanova-bold.woff) format("woff");
+  font-weight: 800;
+  font-display: fallback
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-semibold.woff2) format("woff2"), url(../assets/fonts/proximanova-semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-regularit.woff2) format("woff2"), url(../assets/fonts/proximanova-regularit.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-extraboldit.woff2) format("woff2"), url(../assets/fonts/proximanova-extraboldit.woff) format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: fallback
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../assets/fonts/proximanova-medium.woff2) format("woff2"), url(../assets/fonts/proximanova-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+body {
+  font-family: ProximaNova, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
